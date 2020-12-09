@@ -16,6 +16,8 @@ type Bank struct {
   PhoneNumber string `json:"phoneNumber"`
   Website string `json:"website"`
   Email string `json:"email"`
+  Ussd string `json:"ussd"`
+
 }
 
 type BankJSON struct {
@@ -24,6 +26,8 @@ type BankJSON struct {
   PhoneNumber string `json:"phoneNumber"`
   Website string `json:"website"`
   Email string `json:"email"`
+  Ussd string `json:"ussd"`
+
 }
 
 var banks []BankJSON
@@ -40,6 +44,8 @@ func getAllBanks(w http.ResponseWriter, r *http.Request)  {
       PhoneNumber: bank.PhoneNumber,
       Website: bank.Website,
       Email: bank.Email,
+      Ussd: bank.Ussd,
+
     })
   }
 
