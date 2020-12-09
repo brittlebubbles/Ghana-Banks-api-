@@ -13,7 +13,7 @@ import (
 type Bank struct {
   Name string `json:"name"`
   Address string `json:"address"`
-  PhoneNumber string `json:"number"`
+  PhoneNumber string `json:"phoneNumber"`
   Website string `json:"website"`
   Email string `json:"email"`
 }
@@ -21,7 +21,7 @@ type Bank struct {
 type BankJSON struct {
   Name string `json:"name"`
   Address string `json:"address"`
-  PhoneNumber string `json:"number"`
+  PhoneNumber string `json:"phoneNumber"`
   Website string `json:"website"`
   Email string `json:"email"`
 }
